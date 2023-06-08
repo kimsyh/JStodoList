@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="todoList">
-        <h1 id="h1">할일 목록</h1>
-        <div id="todoBox">
-            <input type="text" id="todoInput">
-            <button type="button" id="todoBtn">추가</button>
-        </div>
-        <ul id="list"></ul>
+      <h1 id="h1">To do List</h1>
+      <div id="todoBox">
+        <input type="text" id="input" class="input" />
+        <button type="button" id="submit" class="btn_submit">추가</button>
+        <span id="loading" class="loading">찾는중...</span>
+      </div>
+      <ul id="list" class="ul"></ul>
+
+      <ul id="searchbox" class="hide"></ul>
     </div>
     <script src="main.js"></script>
-</body>
-</html> 
+  </body>
+</html>
